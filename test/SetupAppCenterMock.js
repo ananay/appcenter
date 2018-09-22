@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = {
-    setupMock(moduleName, setupFileName) {
+    setupMock: (moduleName, setupFileName) => {
         const projectDirectory = path.resolve(__dirname, '..', '..', '..');
         const setupFileNamePath = `<rootDir>${path.sep}node_modules${path.sep}${moduleName}${path.sep}test${path.sep}${setupFileName}`;
 
